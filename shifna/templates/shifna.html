@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Online Food Order Prediction
+        </title>
+        <link rel="stylesheet" href="\static\styleh.css">
+    </head>
+    <body>
+        <h1 >
+            Online food deliver Prediction
+        </h1>
+        
+        <form action="{{url_for('predict')}}" method="post">
+            <p>Enter customer details to predict if the customer will order again:</p>
+            <label for="Age">Age</label>
+            <input type="number" id="Age" name="Age" min="18" max="33" required><br><br>
+            <label for="latitude">latitude</label>
+            <input type="number" id="latitude" name="latitude" min="12.865200" max="13.102000" step=".000001" required><br><br>
+            <label for="longitude">longitude</label>
+            <input type="number" id="longitude" name="longitude" min="77.484" max="77.758" step=".000001" required><br><br>
+            <label for="Pin code">Pin code</label>
+            <input type="number" id="Pin code" name="Pin code" min="560001" max="560109" required><br><br>
+            <label for="Gender">Gender</label>
+            <input type="radio" id="Gender" name="Gender" value="1">
+            <label for="Gender">Male</label>
+            <input type="radio" id="Gender" name="Gender" value="0">
+            <label for="Gender">Female</label><br><br> 
+            <label for="Marital Status">Marital Status</label>
+            <select name="Marital Status" id="Marital Status">
+                <option value="2">Single</option>
+                <option value="0">Married</option>
+                <option value="1">Prefer not to say</option>
+              </select><br><br>
+             <label for="Occupation">Occupation</label>
+             <select name="Occupation" id="Occupation">
+                <option value="0">Employee</option>
+                <option value="1">House wife</option>
+                <option value="2">Self Employeed</option>
+                <option value="3">Student</option>
+             </select><br><br>
+            <label for="Monthly Income">Monthly Income</label>
+            <select name="Monthly Income" id="Monthly Income">
+                <option value="0">10001 to 25000</option>
+                <option value="1">25001 to 50000</option>
+                <option value="2">Below Rs.10000</option>
+                <option value="3">More than 50000</option>
+                <option value="4">No Income</option>
+            </select>  <br><br>
+            <label for="Educational Qualifications">Educational Qualifications</label>
+            <select name="Educational Qualifications" id="Educational Qualifications">
+                <option value="0">Graduate</option>
+                <option value="1">Ph.D</option>
+                <option value="2">Post Graduate</option>
+                <option value="3">School</option>
+                <option value="4">Uneducted</option>
+            </select><br><br>
+            <label for="Family size">Family size</label>
+            <input type="number" id="Family size" name="Family size" min="1" max="6" required><br><br>
+            <label for="Feedback">Feedback</label>
+            <select name="Feedback" id="Feedback">
+                <option value="0">Negative</option>
+                <option value="1">Positive</option>
+            </select><br><br>
+            <input type="submit" id="submit">
+        </form>
+    </body>
+</html>

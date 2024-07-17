@@ -1,0 +1,11 @@
+body{
+    background-image: url('res.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    margin-left: 50%;
+    margin-top: 16%;
+    font-size: 50px;
+    color: aliceblue;
+}
